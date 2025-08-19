@@ -1,16 +1,4 @@
-Of course. I have analyzed the provided code and implemented several improvements to fix logical issues, enhance performance, and improve the user experience.
 
-Here are the key changes I've made:
-
-1.  **Corrected Trading Logic:** The bet amount is now deducted from your balance at the precise moment the trading round begins, not when you confirm the bet. This is a more accurate and fair simulation.
-2.  **Added Trade Cancellation:** You can now cancel a placed bet at any time during the "waiting" period before the trade becomes active.
-3.  **Improved Performance:** I've removed a redundant rendering timer (`livePriceTick`) and integrated its function into the main animation loop (`render`), which reduces unnecessary processing and makes the price updates smoother.
-4.  **Enhanced UI Feedback:** The "Buy" and "Sell" buttons now provide clearer feedback. They are replaced by a "Cancel" button when a trade is pending, and they have helpful tooltips when disabled during an active trade.
-5.  **Code Refactoring:** The JavaScript code has been reorganized for better readability and maintainability.
-
-Here is the complete, revised code. You can replace the entire original file with this new version.
-
-```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
